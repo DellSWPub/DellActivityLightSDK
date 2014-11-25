@@ -1,0 +1,55 @@
+html, body, .colors {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+h1 {
+  font-family: Arial;
+  font-size: 13px;
+  text-align: center;
+}
+.colors {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enableVirtual {
+  line-height: 20px;
+  text-align: center;
+}
+
+.colors div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.cyan {
+  background-color: cyan;
+}
+.magenta {
+  background-color: magenta;
+}

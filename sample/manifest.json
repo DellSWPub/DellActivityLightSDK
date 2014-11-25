@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Dell LED Controller - Sample Code",
+  "description": "Dell LED Controller - Sample Code",
+  "version": "0.0.2",
+  "app": {
+    "background": {
+      "scripts": ["main.js"],
+      "persistent": false
+    }
+  },
+  "permissions": [
+    "hid", {
+      "usbDevices": [{
+        "vendorId": 1240,
+        "productId": 256
+      }]
+    }
+  ]
+}
