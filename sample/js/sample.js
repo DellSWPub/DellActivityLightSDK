@@ -3,7 +3,7 @@
 /*
  * Keeps track of the selected color
  */
-var currentSelectedColor = null;
+var currentSelectedColor = "black";
 
 /*
  * Handles the click on the color 'buttons' in the sample code app.
@@ -34,6 +34,10 @@ function handleEnableVirtualLED(event) {
         height: 40
       },
       resizable: false
+    }, function(openedWindow) {
+      chrome.app.window.get('virtualLed').onClosed.addListener(function() {
+        el.checked = false;
+      });
     });
 
     if (currentSelectedColor !== null) {

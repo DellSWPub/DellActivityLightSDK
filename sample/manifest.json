@@ -1,8 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Dell LED Controller - Sample Code",
+  "name": "Dell Blink Sample",
   "description": "Dell LED Controller - Sample Code",
-  "version": "0.0.2",
+  "icons": {
+    "128": "images/ic_launch-128.png"
+  },
+  "version": "1.0.15",
   "app": {
     "background": {
       "scripts": ["main.js"],
@@ -14,6 +17,10 @@
       "usbDevices": [{
         "vendorId": 1240,
         "productId": 256
+      },
+      {
+        "vendorId": 1240,
+        "productId": 2856
       }]
     }
   ]

@@ -9,6 +9,8 @@ Welcome to Dell Bright Light SDK
 Dell Bright Light API (Chrome OS) is a set of JavaScript APIs to control of LED device on Dell Chromebook. With these APIs, you can turn on/off the LED, change the color of the LED light.<br>
 <img src="https://raw.github.com/DellSWPub/DellBrightLightSDK/master/screenshot/sample-screenshot.png" width="683" height="384"></img>
 
+You can also download sample code from [Dell Blink Sample](https://chrome.google.com/webstore/detail/dell-blink-sample/eamjklppekpngnnlgdnefdefagpmddfi) to your chrome browser of chrome OS for trial.
+
 ###Compatibility
 HW: Dell Chromebook Candy <br>
 OS: ChromeOS ver 39 or higher
