@@ -5,7 +5,7 @@
   "icons": {
     "128": "images/ic_launch-128.png"
   },
-  "version": "1.0.15",
+  "version": "1.0.17",
   "app": {
     "background": {
       "scripts": ["main.js"],
