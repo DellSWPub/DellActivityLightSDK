@@ -21,15 +21,7 @@
   } else {
     dell = exports.dell;
   }
-  document.addEventListener('DOMContentLoaded', event => {
-    let connectButton = document.querySelector('#connect');
-
-    t.decorate(document.querySelector('#terminal'));
-    t.setWidth(80);
-    t.setHeight(24);
-    t.installKeyboard();
-
-    function connect() {
+  function connect() {
       t.io.println('Connecting to ' + port.device_.productName + '...');
       port.connect().then(() => {
         console.log(port);
@@ -46,6 +38,22 @@
         t.io.println('Connection error: ' + error);
       });
     };
+
+    connectButton.addEventListener('click', function() {
+      if (port) {
+        port.disconnect();
+        connectButton.textContent = 'Connect';
+      } else {
+        serial.requestPort().then(selectedPort => {
+          port = selectedPort;
+          connect();
+        }).catch(error => {
+          t.io.println('Connection error: ' + error);
+        });
+      }
+    });
+
+
   /*
    * LED related methods. Users of the API shoudl access this object
    * in order to manipulate the LED, like changing colors, turning it on and off
