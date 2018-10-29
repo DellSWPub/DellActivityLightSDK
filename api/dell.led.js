@@ -22,7 +22,7 @@
     dell = exports.dell;
   }
   /*
-   * LED related methods. Users of the API shoudl access this object
+   * LED related methods. Users of the API should access this object
    * in order to manipulate the LED, like changing colors, turning it on and off
    * or blinking it or not.
    */
